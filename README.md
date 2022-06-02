@@ -1,1 +1,1 @@
-https://Zelenevskayamarinagit.github.io/rsschool-cv/cv
+https://Zelenevskayamarinagit.github.io/rsschool-cv/
