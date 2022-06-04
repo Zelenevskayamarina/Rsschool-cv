@@ -45,22 +45,22 @@ body {
 }
 
 .col-4 {
-    width: calc(100% / 12 * 4 - 30px);
+    width: calc(100% / 12 * 4 - var(--gutter) * 2);
     margin: 0 15px; 
 }
 
 .col-5 {
-    width: calc(100% / 12 * 5 - 30px);  
+    width: calc(100% / 12 * 5 - var(--gutter) * 2);  
     margin: 0 15px;
 }
 
 .col-7 {
-    width: calc(100% / 12 * 7 - 30px);  
+    width: calc(100% / 12 * 7 - var(--gutter) * 2);  
     margin: 0 15px;
 }
 
 .col-8 {
-    width: calc(100% / 12 * 8 - 30px);  
+    width: calc(100% / 12 * 8 - var(--gutter) * 2);  
     margin: 0 15px;
 }
   /* header */
@@ -85,9 +85,9 @@ body {
     flex-direction: column;
     margin: 0 -15px;
     padding-bottom: 50px;
-  }
-  
-  .header__avator-pic {
+}
+
+.header__avator-pic {
     position: relative;
     width: 350px;
     height: 350px;
@@ -95,9 +95,9 @@ body {
     overflow: hidden;
     border-radius: 50%;
     object-fit: cover;
-  }
-  
-  .header__avator-pic::before {
+}
+
+.header__avator-pic::before {
     content: "";
     position: absolute; 
     width: 100%;
