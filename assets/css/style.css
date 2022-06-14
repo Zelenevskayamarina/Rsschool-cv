@@ -25,12 +25,13 @@ body {
     font-size: 22px;  
     line-height: 1.2;  
     text-align: justify; 
+    scroll-behavior: smooth; 
 }
 
 :root {
     --primary-bg-color: rgba(0, 0, 0, .3);
     --secondary-bg-color: rgba(0, 0, 0, .9);
-    --third-bg-color: rgba(255, 215, 0, .7);    
+    --third-bg-color: rgba(255, 215, 0, .5);    
     --primary-text-color: #212121;
     --secondary-text-color: #FFFFFF;    
     --content-width: 1170px;
@@ -68,6 +69,41 @@ body {
     padding: 20px 0;  
 }
 
+.header__nav {
+    margin-bottom: 50px;
+   
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+} 
+
+.header__item {
+    padding: 10px 0;
+    margin-right: 20px;
+   
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 10px 0 100px 0 var(--secondary-bg-color);
+}
+
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .8;
+    cursor: pointer;
+}
+
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +113,7 @@ body {
     border-bottom: 1px solid #212121;
 }
 
-.header__avator {
+.header__avatar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -87,7 +123,7 @@ body {
     padding-bottom: 50px;
 }
 
-.header__avator-pic {
+.header__avatar-pic {
     position: relative;
     width: 350px;
     height: 350px;
@@ -97,7 +133,7 @@ body {
     object-fit: cover;
 }
 
-.header__avator-pic::before {
+.header__avatar-pic::before {
     content: "";
     position: absolute; 
     width: 100%;
@@ -109,8 +145,9 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-.header__avator-pic:hover::before {
+.header__avatar-pic:hover::before {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
 .header__avatar-title {  
@@ -141,6 +178,10 @@ body {
     text-decoration: none;
 }
 
+.information {
+    padding-bottom: 20px;
+}
+
 .information__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -159,23 +200,25 @@ body {
 
 .information__skills-title:hover {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
 .information__skills-list {
     list-style: none;
 }
 
-.information__languagess-title {
+.information__languages-title {
     display: inline-block;
     background-color: var(--primary-bg-color);
     padding: 20px;
 }
 
-.information__languagess-title:hover {
+.information__languages-title:hover {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
-.information__languagess-list {
+.information__languages-list {
     list-style: none;
 }
 
@@ -191,6 +234,7 @@ body {
 
 .information__about-title:hover {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
 .information__education {
@@ -205,6 +249,7 @@ body {
 
 .information__education-title:hover {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
 .information__education-list {
@@ -223,6 +268,7 @@ body {
 
 .information__experience-title:hover {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
 .information__experience-list {
@@ -237,6 +283,7 @@ body {
 
 .information__code-title:hover {
     background-color: var(--third-bg-color);
+    cursor: pointer;
 }
 
 .information__code-condition {
@@ -249,20 +296,27 @@ body {
 }
 
   /* footer */
-.footer {
-    padding: 50px 0;
+.footer__info {
+    text-align: center;
+    background-color: var(--primary-bg-color);    
+    padding: 10px 0;
 }
 
-.footer__info {
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-text-color);
-    padding: 50px 0;
+.footer__info-text {
+    padding: 5px 0;  
 }
 
 .footer__info-link {
-    color: var(--secondary-text-color);
-    text-decoration: none;
+    color: var(--primary-text-color);
+    text-decoration: none;    
+    font-style: italic;
+}
+
+.footer__info-img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer__copyright {
+    padding: 5px 0; 
 }

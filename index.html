@@ -14,9 +14,31 @@
 <body>
     <header class="header">
         <div class="container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                <li class="header__item">
+                    <a href="#skills" class="header__link">skills</a>
+                </li>
+                <li class="header__item">
+                    <a href="#languages" class="header__link">languages</a>
+                </li>
+                <li class="header__item">
+                    <a href="#about" class="header__link">about me</a>
+                </li>
+                <li class="header__item">
+                    <a href="#education" class="header__link">education and qualifications</a>
+                </li>
+                <li class="header__item">
+                    <a href="#experience" class="header__link">work experience</a>
+                </li>
+                <li class="header__item">
+                    <a href="#code" class="header__link">code examples</a>
+                </li>
+                </ul>                
+            </nav>
             <div class="header__wrapper">
-                <div class="header__avator col-7">
-                    <div class="header__avator-pic">
+                <div class="header__avatar col-7">
+                    <div class="header__avatar-pic">
                         <img src="./assets/image/myAvatar.jpg" alt="myAvatar">
                     </div>
                     <div class="header__avatar-title">
@@ -27,19 +49,19 @@
                     <h2 class="header__contact-title">CONTACT</h2>
                     <ul class="header__contact-list">
                         <li class="header__contact-item">
-                            <a href="!#" class="header__contact-link"><b>Address</b></a>
+                            <a href="/" class="header__contact-link"><b>Address</b></a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="!#" class="header__contact-link"><b>Phone:</b> +375293490159</a>
+                            <a href="/" class="header__contact-link"><b>Phone:</b> +375293490159</a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="!#" class="header__contact-link"><b>E-mail:</b> mzelianeuskaya@yandex.ru</a>
+                            <a href="/" class="header__contact-link"><b>E-mail:</b> mzelianeuskaya@yandex.ru</a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="!#" class="header__contact-link"><b>Discord:</b> Zelenevskayamarina#5123</a>
+                            <a href="/" class="header__contact-link"><b>Discord:</b> Zelenevskayamarina#5123</a>
                         </li>
                         <li class="header__contact-item">
-                            <a href="!#" class="header__contact-link"><b>CodePen:</b> Zelenevskayamarina</a>
+                            <a href="/" class="header__contact-link"><b>CodePen:</b> Zelenevskayamarina</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +72,7 @@
     <div class="container">
         <div class="information__wrapper">
         <div class="information__left col-4">
-            <div class="information__skills">
+            <div id="skills" class="information__skills">
             <h2 class="information__skills-title">SKILLS</h2>
             <h3 class="information__skills-subtitle">Professional skills:</h3>
             <ul class="information__skills-list">
@@ -92,14 +114,14 @@
                 </li>
             </ul>
             </div>
-            <div class="information__languagess">
-            <h2 class="information__languagess-title">LANGUAGESS</h2>
-            <ul class="information__languagess-list">
-                <li class="information__languagess-item">
+            <div id="languages" class="information__languages">
+            <h2 class="information__languages-title">LANGUAGES</h2>
+            <ul class="information__languages-list">
+                <li class="information__languages-item">
                 <b>English:</b>
                 B1 – Intermediate
                 </li>
-                <li class="information__languagess-item">
+                <li class="information__languages-item">
                 <b>Chinese:</b>
                 A2 – Upper Elementary
                 </li>
@@ -107,7 +129,7 @@
             </div>
         </div>
         <div class="information__right col-8">
-            <div class="information__about">
+            <div id="about" class="information__about">
             <h2 class="information__about-title">ABOUT ME</h2>
             <p class="information__about-description">
                 I have experience in personnel management in a large
@@ -122,7 +144,7 @@
                 programming, because I have a great desire to learn and develop.
             </p>
             </div>
-            <div class="information__education">
+            <div id="education" class="information__education">
             <h2 class="information__education-title">
                 EDUCATION AND QUALIFICATIONS
             </h2>
@@ -139,7 +161,7 @@
                 </li>
             </ul>
             </div>
-            <div class="information__experience">
+            <div id="experience" class="information__experience">
             <h2 class="information__experience-title">WORK EXPERIENCE</h2>
             <ul class="information__experience-list">
                 <li class="information__experience-item">
@@ -167,7 +189,7 @@
                 </li>
             </ul>
             </div>
-            <div class="information__code">
+            <div id="code" class="information__code">
             <h2 class="information__code-title">CODE EXAMPLES</h2>
             <div class="information__code-task">
                 <p class="information__code-condition">
@@ -270,8 +292,12 @@
     <footer class="footer">
     <div class="container">
         <div class="footer__info">
-        You can check my GitHub profiles:
-        <a class="footer__info-link" href="https://github.com/mzelenevskaya">@mzelenevskaya</a>and<a class="footer__info-link" href="https://github.com/Zelenevskayamarina">@zelenevskayamarina</a>
+        <p class="footer__info-text">You can check my GitHub profiles:</p>
+        <a class="footer__info-link" href="https://github.com/mzelenevskaya" target="blank">@mzelenevskaya</a> and <a class="footer__info-link" href="https://github.com/Zelenevskayamarina" target="blank">@zelenevskayamarina</a>
+        <a class="footer__info-link" href="https://rs.school/js/" target="blank">
+            <img class="footer__info-img" src="./assets/image/rs_school_js.svg" alt="Rsschool Icon">
+        </a>
+          <p class="footer__copyright">© The Rolling Scopes 2022</p>
      </div>
     </div>
     </footer>
