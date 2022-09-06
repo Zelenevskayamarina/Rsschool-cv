@@ -38,7 +38,7 @@ body {
     --mobile-padding: 15px;
     --gutter: 15px;
 }
-  /* -------------------components------------------ */
+
 .container {
     max-width: calc(var(--content-width) + var(--mobile-padding) * 2);    
     padding: 0 15px;
@@ -64,14 +64,13 @@ body {
     width: calc(100% / 12 * 8 - var(--gutter) * 2);  
     margin: 0 15px;
 }
-  /* header */
+
 .header {
     padding: 20px 0;  
 }
 
 .header__nav {
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px;   
 }
 
 .header__list {
@@ -84,8 +83,7 @@ body {
 
 .header__item {
     padding: 10px 0;
-    margin-right: 20px;
-   
+    margin-right: 20px;   
 }
 
 .header__item:last-child {
@@ -273,6 +271,16 @@ body {
 
 .information__experience-list {
     list-style: none;
+    margin-bottom: 15px;
+}
+
+.information__experience-desc {
+    
+}
+.information__experience-link {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--primary-text-color);
 }
 
 .information__code-title {
@@ -295,7 +303,6 @@ body {
     font-style: italic;  
 }
 
-  /* footer */
 .footer__info {
     text-align: center;
     background-color: var(--primary-bg-color);    
